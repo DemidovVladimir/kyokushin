@@ -4,6 +4,7 @@ pipelines:
        caches:
          - node
        script:
+         - npm install -g yarn
          - yarn
          - yarn global add @angular/cli
          - yarn start
