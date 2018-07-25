@@ -6,11 +6,11 @@ export const overviewImages: ImageGridArray[] = [
     'href': '../assets/img/angular.svg'
   },
   {
-    'name': 'RxJS',
-    'href': '../assets/img/rxjs.png'
-  },
-  {
     'name': 'Typescript',
     'href': '../assets/img/ts.png'
+  },
+  {
+    'name': 'RxJS',
+    'href': '../assets/img/rxjs.png'
   }
 ];
