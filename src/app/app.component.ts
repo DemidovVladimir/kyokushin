@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'app';
 
   constructor() {
-    console.log('test biuld');
+    console.log('test');
   }
 }
