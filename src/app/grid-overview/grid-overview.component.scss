@@ -1,0 +1,16 @@
+.grid-icons {
+  display: flex;
+  .grid-icon {
+    flex-grow: 1;
+    flex-basis: 0;
+    h3 {
+      text-align: center;
+    }
+    img {
+      display: block;
+      width: auto;
+      height: 200px;
+      margin: auto;
+    }
+  }
+}
