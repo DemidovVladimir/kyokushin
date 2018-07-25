@@ -1,7 +1,9 @@
-image: node:8
 pipelines:
-  default:
-    - step:
-        script:
-          - yarn
-          - yarn test
+ default:
+   - step:
+       caches:
+         - node
+       script:
+         - yarn
+         - yarn global add @angular/cli
+         - yarn start
