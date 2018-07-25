@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "kyokushin-angular"
+  "defaultProject": "kyokushin-angular",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
