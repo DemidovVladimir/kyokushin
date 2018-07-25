@@ -3,4 +3,4 @@ pipelines:
     - step:
         name: Build and test
         script:
-          - yarn test
+          - npm test
