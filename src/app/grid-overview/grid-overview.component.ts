@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ImageGridArray } from './grid-overview.model';
+import { GridItem } from './grid-overview.model';
 import { overviewImages } from './img-list.const';
 
 @Component({
@@ -10,17 +10,13 @@ import { overviewImages } from './img-list.const';
 export class GridOverviewComponent implements OnInit {
   name: string;
   href: string;
-  imageArray: ImageGridArray[];
-  elevationValue: number;
+  imageArray: GridItem[];
 
   constructor() {
-    this.elevationValue = 15;
     this.imageArray = overviewImages;
   }
 
   ngOnInit() {
   }
-
-
 
 }
