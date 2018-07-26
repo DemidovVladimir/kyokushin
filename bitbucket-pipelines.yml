@@ -3,7 +3,6 @@ pipelines:
  default:
    - step:
        script:
-         - npm install -g yarn
-         - yarn
-         - yarn global add @angular/cli
-         - yarn test
+         - npm install -g @angular/cli
+         - npm install
+         - npm run test
