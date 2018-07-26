@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { ImageGridArray } from './grid-overview.model';
+import { GridItem } from './grid-overview.model';
 import { overviewImages } from './img-list.const';
 
 @Component({
@@ -11,19 +10,13 @@ import { overviewImages } from './img-list.const';
 export class GridOverviewComponent implements OnInit {
   name: string;
   href: string;
-  imageArray: ImageGridArray[];
+  imageArray: GridItem[];
 
-  constructor(private router: Router) {
+  constructor() {
     this.imageArray = overviewImages;
   }
 
   ngOnInit() {
-  }
-
-  redirect() {
-    const route = this.name;
-    console.log(this);
-    this.router.navigate([`./${route}`]);
   }
 
 }

@@ -7,8 +7,19 @@ $black: #282828;
   padding: 25px;
   box-sizing: border-box;
 
+  .logo {
+    display: inline-block;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   h1 {
     margin: 20px 0px;
     text-align: center;
   }
+
 }
