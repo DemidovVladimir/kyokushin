@@ -1,4 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatCardModule } from '@angular/material';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { GridOverviewComponent } from './grid-overview.component';
 
@@ -8,7 +10,8 @@ describe('GridOverviewComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GridOverviewComponent ]
+      declarations: [ GridOverviewComponent ],
+      imports: [MatCardModule, RouterTestingModule.withRoutes([])],
     })
     .compileComponents();
   }));

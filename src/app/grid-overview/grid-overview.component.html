@@ -1,5 +1,5 @@
 <div class="grid-icons">
-  <div class="grid-icon" *ngFor="let image of imageArray" >
+  <div class="grid-icon" (click)="redirect()" *ngFor="let image of imageArray" >
     <mat-card>
       <img mat-card-image src='{{image.href}}'/>
       <mat-card-title>{{image.name}}</mat-card-title>
