@@ -1,6 +1,9 @@
 <div class="grid-icons">
   <div class="grid-icon" *ngFor="let image of imageArray" >
-    <h3>{{image.name}}</h3>
-    <img src='{{image.href}}'/>
+    <mat-card>
+      <img mat-card-image src='{{image.href}}'/>
+      <mat-card-title>{{image.name}}</mat-card-title>
+      <mat-card-content>{{image.content}}</mat-card-content>
+    </mat-card>
   </div>
 </div>

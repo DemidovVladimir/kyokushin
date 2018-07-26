@@ -11,12 +11,16 @@ export class GridOverviewComponent implements OnInit {
   name: string;
   href: string;
   imageArray: ImageGridArray[];
+  elevationValue: number;
 
   constructor() {
+    this.elevationValue = 15;
     this.imageArray = overviewImages;
   }
 
   ngOnInit() {
   }
+
+
 
 }

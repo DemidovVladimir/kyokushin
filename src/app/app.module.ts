@@ -1,3 +1,4 @@
+import { MatCardModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing/app-routing.module';
@@ -13,6 +14,7 @@ import { GridOverviewComponent } from './grid-overview/grid-overview.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
